@@ -1,0 +1,26 @@
+import java.util.Scanner;
+ 
+public class vowel {
+    public static void main(String[] args)
+       
+    {
+        String str =new String ();
+        Scanner sc=new Scanner (System.in);
+        System.out.println("enter string:");
+        str= sc.nextLine();
+        int v=0;
+        char c;
+        str = str.toLowerCase();
+        for (int i = 0; i < str.length(); i++) 
+        {
+          c=str.charAt(i);
+            if (c == 'a' || c=='e'||c=='i'||c=='o'||c=='u')
+            {
+                
+                v++;
+            }
+        }
+        System.out.println(
+            "Total no of vowels in string are: " + v);
+    }
+}
